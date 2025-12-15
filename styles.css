@@ -32,13 +32,22 @@ div {
 }
     
 }
-#grid div:nth-child(1) { grid-area: a; }
-#grid div:nth-child(2) { grid-area: b; }
-#grid div:nth-child(3) { grid-area: c; }
-#grid div:nth-child(4) { grid-area: d; }
-#grid div:nth-child(5) { grid-area: e; }
-#grid div:nth-child(6) { grid-area: f; }
-#grid div:nth-child(7) { grid-area: g; }
-#grid div:nth-child(8) { grid-area: h; }
-#grid div:nth-child(9) { grid-area: i; }
-#grid div:nth-child(10){ grid-area: j; }
+#grid > div:nth-child(1) {
+  grid-column: span 4;
+}
+
+#grid > div:nth-child(2) {
+  grid-row: span 4;
+}
+
+#grid > div:nth-child(4) {
+  grid-column: span 2;
+}
+
+#grid > div:nth-child(5) {
+  grid-column: span 2;
+}
+
+#grid > div:nth-child(10) {
+  grid-column: span 3;
+}
